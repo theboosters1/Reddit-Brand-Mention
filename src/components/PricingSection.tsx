@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const plans = [
@@ -112,6 +112,16 @@ export const PricingSection = ({ showHeader = true }: { showHeader?: boolean }) 
               </Link>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <div className="inline-flex items-center justify-center space-x-2 bg-orange-50 px-6 py-3 rounded-full border border-orange-100">
+            <Sparkles className="w-4 h-4 text-orange-600 animate-pulse" />
+            <p className="text-orange-900 text-sm font-medium">
+              All plans include a <span className="font-bold">14-day free trial</span> of Professional features.
+            </p>
+            <Sparkles className="w-4 h-4 text-orange-600 animate-pulse" />
+          </div>
         </div>
       </div>
     </section>
