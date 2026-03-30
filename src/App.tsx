@@ -5,6 +5,8 @@ import { Pricing } from './pages/Pricing';
 import { FAQPage } from './pages/FAQ';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { GetStarted } from './pages/GetStarted';
+import { Blog } from './pages/Blog';
 
 export default function App() {
   return (
@@ -18,7 +20,8 @@ export default function App() {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/get-started" element={<div className="pt-32 text-center">Registration Coming Soon</div>} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/get-started" element={<GetStarted />} />
           </Routes>
         </main>
         <Footer />

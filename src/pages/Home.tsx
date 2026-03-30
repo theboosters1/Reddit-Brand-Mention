@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MessageSquare, Shield, BarChart3, Zap, ArrowRight, CheckCircle2, Search, Bell, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SEO, organizationSchema, faqSchema } from '@/src/components/SEO';
+import { PricingSection } from '@/src/components/PricingSection';
 
 const faqs = [
   {
@@ -167,6 +168,9 @@ export const Home = () => {
           <SEO title="Home" description="Home page" schema={faqSchema(faqs)} />
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <PricingSection />
 
       {/* CTA Section */}
       <section className="py-24 sm:py-32">
